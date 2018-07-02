@@ -2,14 +2,15 @@
 
 ## What is this tool? 
 An application to read EXIF data from images and extract the longitude and latitude from GPS information.  This data is then stored as a geospatial vector file for use in GIS applications such as QGIS or ArcGIS.
+
 Language: Python 3 
 
 ## How do I run the program? 
 Python 3 must be installed on your system to run this application. You must also then install the following dependencies using pip or another method: 
 
--Fiona 
--Shapely 
--ExifRead 
+- [Fiona](https://pypi.org/project/Fiona/)
+- Shapely 
+- ExifRead 
 
 Once these are dependencies are satisfied, you can configure the application parameters detailed below or run the application from current directory as follows: 
 
