@@ -42,7 +42,7 @@ Similarly, you can change the location where the output geospatial file is saved
 layer_out = '/home/user/Documents/GIS/myphotos.gpkg' 
 ```
  
-[By default, the application saves information as a OGC GeoPackage file.](http://switchfromshapefile.org/)  If you would like to change this, you can change the ``` layer_out_format ``` to either ESRI Shapefile, MapInfo File or GPKG as needed.  
+[By default, the application saves information as an OGC GeoPackage file.](http://switchfromshapefile.org/)  If you would like to change this, you can change the ``` layer_out_format ``` to either ESRI Shapefile, MapInfo File or GPKG as needed.  
 ```python
 layer_out_format = 'ESRI Shapefile' 
 ```
