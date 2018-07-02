@@ -32,17 +32,17 @@ layer_out_format = 'GPKG'
 
 You can safely change these parameters as needed, just remember to keep your changes wrapped in quotation marks. 
 
-To change the location where the application will scan for photos, change the ```python photo_directory ``` variable like the example below: 
+To change the location where the application will scan for photos, change the ``` photo_directory ``` variable like the example below: 
 ```python
 photo_directory = '/home/user/Pictures' 
 ```
 
-Similarly, you can change the location where the output geospatial file is saved by changing the ```python layer_out ``` variable as below: 
+Similarly, you can change the location where the output geospatial file is saved by changing the ``` layer_out ``` variable as below: 
 ```python
 layer_out = '/home/user/Documents/GIS/myphotos.gpkg' 
 ```
  
-[By default, the application saves information as a OGC GeoPackage file.](http://switchfromshapefile.org/)  If you would like to change this, you can change the ```python layer_out_format ``` to either ESRI Shapefile, MapInfo File or GPKG as needed.  
+[By default, the application saves information as a OGC GeoPackage file.](http://switchfromshapefile.org/)  If you would like to change this, you can change the ``` layer_out_format ``` to either ESRI Shapefile, MapInfo File or GPKG as needed.  
 ```python
 layer_out_format = 'ESRI Shapefile' 
 ```
