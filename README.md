@@ -66,7 +66,7 @@ No. This application saves files in WGS84 (EPSG: 4326) as it a standard coordina
 
 You can easily change the projection of the output file through the use of GIS software after running this program.  
 
-## Why can't I use my images in formats (PNG, BMP, GIF)? 
+## Why can't I use my images in other formats (PNG, BMP, GIF)? 
 
 These formats do not store GPS information, making it impossible to plot them as a spatial vector.  
 
