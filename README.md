@@ -9,8 +9,8 @@ Language: Python 3
 Python 3 must be installed on your system to run this application. You must also then install the following dependencies using pip or another method: 
 
 - [Fiona](https://pypi.org/project/Fiona/)
-- Shapely 
-- ExifRead 
+- [Shapely](https://pypi.org/project/Shapely/)
+- [ExifRead](https://pypi.org/project/ExifRead/)
 
 Once these are dependencies are satisfied, you can configure the application parameters detailed below or run the application from current directory as follows: 
 
@@ -42,7 +42,7 @@ Similarly, you can change the location where the output geospatial file is saved
 layer_out = '/home/user/Documents/GIS/myphotos.gpkg' 
 ```
  
-By default, the application saves information as a OGC GeoPackage file.  If you would like to change this, you can change the ```python layer_out_format ``` to either ESRI Shapefile, MapInfo File or GPKG as needed.  
+[By default, the application saves information as a OGC GeoPackage file.](http://switchfromshapefile.org/)  If you would like to change this, you can change the ```python layer_out_format ``` to either ESRI Shapefile, MapInfo File or GPKG as needed.  
 ```python
 layer_out_format = 'ESRI Shapefile' 
 ```
