@@ -92,12 +92,22 @@ def exif_2_longlat(photo):
         # seconds.
         latitudedegrees, latitudemins, latitudesecs = (str(latitude).replace(']', '')
         	.replace('[', '').split(','))
-        latitudedms = (str(latituderef), int(latitudedegrees), int(
-            latitudemins), int(latitudesecs.split('/')[0])/int(latitudesecs.split('/')[1]))
+        if '/' in latitudesecs:
+            latitudedms = (str(latituderef), int(latitudedegrees), int(
+                latitudemins), int(latitudesecs.split('/')[0])/int(latitudesecs.split('/')[1]))
+        else:
+            latitudedms = (str(latituderef), int(latitudedegrees), int(
+                latitudemins), int(latitudesecs))
+                
         longitudedegrees, longitudemins, longitudesecs = (str(longitude).replace(']', '')
-        	.replace('[', '').split(','))
-        longitudedms = (str(longituderef), int(longitudedegrees), int(
-            longitudemins), int(longitudesecs.split('/')[0])/int(longitudesecs.split('/')[1]))
+            .replace('[', '').split(','))
+        if '/' in longitudesecs:
+            longitudedms = (str(longituderef), int(longitudedegrees), int(
+                longitudemins), int(longitudesecs.split('/')[0])/int(longitudesecs.split('/')[1]))
+        else:
+            longitudedms = (str(longituderef), int(longitudedegrees), int(
+                longitudemins), int(longitudesecs))
+
 
         # Convert degrees, minutes and seconds to decimal using the following formula:
         # decimal = degrees + minutes/60 + degrees/3600
@@ -149,8 +159,8 @@ logfile = Logging_file(sys.path[0] + '/exif2gislog.txt')
 #####PARAMS#####
 # Specify the parameters for your search. You'll probably want to change these.
 # Supported GIS formats: GPKG, ESRI Shapefile, MapInfo File.
-photo_directory = '/path/to/dir'
-layer_out = '/path/to/out/out.gpkg'
+photo_directory = '/home/jamie/Downloads/Flickr Photos'
+layer_out = '/home/jamie/Desktop/out.gpkg'
 layer_out_format = 'GPKG'
 ################
 
