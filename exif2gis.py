@@ -159,8 +159,8 @@ logfile = Logging_file(sys.path[0] + '/exif2gislog.txt')
 #####PARAMS#####
 # Specify the parameters for your search. You'll probably want to change these.
 # Supported GIS formats: GPKG, ESRI Shapefile, MapInfo File.
-photo_directory = '/home/jamie/Downloads/Flickr Photos'
-layer_out = '/home/jamie/Desktop/out.gpkg'
+photo_directory = '/home/example/photodir'
+layer_out = '/home/example/out.gpkg'
 layer_out_format = 'GPKG'
 ################
 
