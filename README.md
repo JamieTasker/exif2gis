@@ -62,7 +62,7 @@ The following geospatial file types are supported:
 
 ## Can I change the projection of the output file? 
 
-No. This application saves files in WGS84 (EPSG: 4326) as it a standard coordinate system for the earth. It is not possible to change the projection system as the application does not convert latitude and longitude to different formats.  
+No. This application saves files in WGS84 (EPSG: 4326) as it is a standard coordinate system for the earth. It is not possible to change the projection system as the application does not convert WGS84 latitude and longitude to different formats.  
 
 You can easily change the projection of the output file through the use of GIS software after running this program.  
 
